@@ -1,0 +1,28 @@
+
+# Ticket menu items definition
+entity.ticket_entity.collection:
+  title: 'Ticket list'
+  route_name: entity.ticket_entity.collection
+  description: 'List Ticket entities'
+  parent: system.admin_structure
+  weight: 100
+
+ticket_entity.admin.structure.settings:
+  title: 'Ticket settings'
+  description: 'Configure Ticket entities'
+  route_name: ticket_entity.settings
+  parent: system.admin_structure
+
+# Customer menu items definition
+entity.customer_entity.collection:
+  title: 'Customer list'
+  route_name: entity.customer_entity.collection
+  description: 'List Customer entities'
+  parent: system.admin_structure
+  weight: 100
+
+customer_entity.admin.structure.settings:
+  title: 'Customer settings'
+  description: 'Configure Customer entities'
+  route_name: customer_entity.settings
+  parent: system.admin_structure

@@ -1,0 +1,90 @@
+uuid: 16e912c8-1118-412c-96eb-38a8ed8762cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.customer_entity.customer_entity.field_address
+    - field.field.customer_entity.customer_entity.field_customer_id
+    - field.field.customer_entity.customer_entity.field_email
+    - field.field.customer_entity.customer_entity.field_phone
+  module:
+    - address
+    - ds
+    - ivc_tickets
+    - telephone
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - name
+        - field_address
+        - field_email
+        - field_phone
+        - field_customer_id
+_core:
+  default_config_hash: p_Qn_cwiG2I-qml_4Xg3m5lNDN9UcJcm8ZQtaxSxKbs
+id: customer_entity.customer_entity.default
+targetEntityType: customer_entity
+bundle: customer_entity
+mode: default
+content:
+  field_address:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: main
+  field_customer_id:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: main
+  field_email:
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: main
+  field_phone:
+    weight: 3
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: main
+  name:
+    label: inline
+    type: string
+    weight: 0
+    region: main
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  user_id: true

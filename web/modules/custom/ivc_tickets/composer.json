@@ -1,0 +1,13 @@
+{
+    "name": "ivc_tickets",
+    "type": "drupal-module",
+    "description": "Custom Entity "Tickets" for ticketless sales.",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/ivc_tickets",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/ivc_tickets",
+        "source": "http://cgit.drupalcode.org/ivc_tickets",
+    },
+}

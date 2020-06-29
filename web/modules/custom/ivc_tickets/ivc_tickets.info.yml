@@ -1,0 +1,7 @@
+name: 'IVC Tickets'
+type: module
+description: 'Custom Entity "Tickets" for ticketless sales.'
+core: 8.x
+package: 'BackOffice Thinking'
+dependencies:
+  - address

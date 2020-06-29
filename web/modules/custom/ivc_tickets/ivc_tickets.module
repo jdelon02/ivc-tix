@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains ivc_tickets.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ivc_tickets_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ivc_tickets module.
+    case 'help.page.ivc_tickets':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom Entity &quot;Tickets&quot; for ticketless sales.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

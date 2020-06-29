@@ -1,0 +1,40 @@
+add ticket entities:
+  title: 'Create new Ticket entities'
+
+administer ticket entities:
+  title: 'Administer Ticket entities'
+  description: 'Allow to access the administration form to configure Ticket entities.'
+  restrict access: true
+
+delete ticket entities:
+  title: 'Delete Ticket entities'
+
+edit ticket entities:
+  title: 'Edit Ticket entities'
+
+view published ticket entities:
+  title: 'View published Ticket entities'
+
+view unpublished ticket entities:
+  title: 'View unpublished Ticket entities'
+
+add customer entities:
+  title: 'Create new Customer entities'
+
+administer customer entities:
+  title: 'Administer Customer entities'
+  description: 'Allow to access the administration form to configure Customer entities.'
+  restrict access: true
+
+delete customer entities:
+  title: 'Delete Customer entities'
+
+edit customer entities:
+  title: 'Edit Customer entities'
+
+view published customer entities:
+  title: 'View published Customer entities'
+
+view unpublished customer entities:
+  title: 'View unpublished Customer entities'
+

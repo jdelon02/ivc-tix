@@ -1,0 +1,20 @@
+uuid: c8ac38a4-7acd-4771-82a3-f58e017d2e21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.ticket_entity.field_inventory_line_item_id
+  module:
+    - ivc_tickets
+id: ticket_entity.ticket_entity.field_inventory_line_item_id
+field_name: field_inventory_line_item_id
+entity_type: ticket_entity
+bundle: ticket_entity
+label: 'Inventory Line Item ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

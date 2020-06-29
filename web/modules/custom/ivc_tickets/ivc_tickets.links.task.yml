@@ -1,0 +1,42 @@
+# Ticket routing definition
+ticket_entity.settings_tab:
+  route_name: ticket_entity.settings
+  title: 'Settings'
+  base_route: ticket_entity.settings
+
+entity.ticket_entity.canonical:
+  route_name: entity.ticket_entity.canonical
+  base_route: entity.ticket_entity.canonical
+  title: 'View'
+
+entity.ticket_entity.edit_form:
+  route_name: entity.ticket_entity.edit_form
+  base_route: entity.ticket_entity.canonical
+  title: 'Edit'
+
+entity.ticket_entity.delete_form:
+  route_name:  entity.ticket_entity.delete_form
+  base_route:  entity.ticket_entity.canonical
+  title: Delete
+  weight: 10
+# Customer routing definition
+customer_entity.settings_tab:
+  route_name: customer_entity.settings
+  title: 'Settings'
+  base_route: customer_entity.settings
+
+entity.customer_entity.canonical:
+  route_name: entity.customer_entity.canonical
+  base_route: entity.customer_entity.canonical
+  title: 'View'
+
+entity.customer_entity.edit_form:
+  route_name: entity.customer_entity.edit_form
+  base_route: entity.customer_entity.canonical
+  title: 'Edit'
+
+entity.customer_entity.delete_form:
+  route_name:  entity.customer_entity.delete_form
+  base_route:  entity.customer_entity.canonical
+  title: Delete
+  weight: 10

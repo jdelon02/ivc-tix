@@ -1,0 +1,21 @@
+uuid: ee16c819-81c7-4424-bf45-97bff5481bcd
+langcode: en
+status: true
+dependencies:
+  module:
+    - ivc_tickets
+id: ticket_entity.field_ticket_characteristics
+field_name: field_ticket_characteristics
+entity_type: ticket_entity
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

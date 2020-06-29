@@ -1,0 +1,20 @@
+uuid: 234de049-acae-4dfe-ae4a-33c003e56f82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.ticket_entity.field_ticket_characteristics
+  module:
+    - ivc_tickets
+id: ticket_entity.ticket_entity.field_ticket_characteristics
+field_name: field_ticket_characteristics
+entity_type: ticket_entity
+bundle: ticket_entity
+label: 'Ticket Characteristics'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,143 @@
+uuid: 9daee4b5-8edb-4043-aedc-e0946a058f3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.ticket_entity.ticket_entity.field_admission_date
+    - field.field.ticket_entity.ticket_entity.field_amount_paid
+    - field.field.ticket_entity.ticket_entity.field_customer_info
+    - field.field.ticket_entity.ticket_entity.field_inventory_line_item_id
+    - field.field.ticket_entity.ticket_entity.field_issued_date_time
+    - field.field.ticket_entity.ticket_entity.field_order_id
+    - field.field.ticket_entity.ticket_entity.field_source
+    - field.field.ticket_entity.ticket_entity.field_ticket_characteristics
+  module:
+    - datetime
+    - ds
+    - ivc_tickets
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - name
+        - user_id
+        - field_ticket_characteristics
+        - field_admission_date
+        - field_issued_date_time
+        - field_source
+        - field_amount_paid
+        - field_inventory_line_item_id
+        - field_order_id
+        - field_customer_info
+id: ticket_entity.ticket_entity.default
+targetEntityType: ticket_entity
+bundle: ticket_entity
+mode: default
+content:
+  field_admission_date:
+    weight: 2
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: main
+  field_amount_paid:
+    weight: 5
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: main
+  field_customer_info:
+    weight: 8
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: main
+  field_inventory_line_item_id:
+    weight: 6
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: main
+  field_issued_date_time:
+    weight: 3
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: main
+  field_order_id:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: main
+  field_source:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: main
+  field_ticket_characteristics:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: main
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: main
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: main
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

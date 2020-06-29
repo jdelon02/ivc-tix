@@ -1,0 +1,21 @@
+uuid: 7c871157-133f-4a19-ba08-a8325422bcd9
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - ivc_tickets
+_core:
+  default_config_hash: zW1grGsKhc50jdoGfoom4abF9-8OTCRG4Ah7-0jvWgY
+id: customer_entity.field_address
+field_name: field_address
+entity_type: customer_entity
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
