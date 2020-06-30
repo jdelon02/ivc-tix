@@ -55,6 +55,7 @@
         "drupal/media_entity_browser": "^1.0@beta",
         "drupal/module_filter": "^3.1",
         "drupal/pathauto": "^1.8",
+        "drupal/shopify": "^1.0",
         "drupal/simple_block": "^1.0@beta",
         "drupal/simple_sitemap": "^3.7",
         "drupal/smart_trim": "^1.3",
