@@ -1,0 +1,20 @@
+name: 'Shopify eCommerce'
+description: 'Display your Shopify store within your Drupal site.'
+package: Shopify
+
+type: module
+core: 8.x
+
+dependencies:
+  - drupal:file
+  - drupal:image
+  - drupal:path
+  - drupal:views
+  - drupal:taxonomy
+
+configure: shopify.admin
+
+# Information added by Drupal.org packaging script on 2020-05-04
+version: '8.x-1.0-alpha5'
+project: 'shopify'
+datestamp: 1588633053

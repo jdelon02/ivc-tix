@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "81c616ae6757fab205732127744a1216",
+    "content-hash": "6cd0fa1358319062ece591ef826f8cc6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1218,6 +1218,43 @@
                 "php"
             ],
             "time": "2019-06-08T11:03:04+00:00"
+        },
+        {
+            "name": "donutdan4114/shopify",
+            "version": "v2020.01.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/donutdan4114/shopify.git",
+                "reference": "ca6fe036682c20698873133b388588cd23ece92e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/donutdan4114/shopify/zipball/ca6fe036682c20698873133b388588cd23ece92e",
+                "reference": "ca6fe036682c20698873133b388588cd23ece92e",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0",
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Shopify\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Pepin",
+                    "email": "donutdan4114@gmail.com"
+                }
+            ],
+            "description": "Shopify PHP SDK to interact with the Shopify API.",
+            "time": "2020-03-09T15:51:31+00:00"
         },
         {
             "name": "drupal/address",
@@ -4474,6 +4511,71 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
+            "name": "drupal/shopify",
+            "version": "1.0.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/shopify.git",
+                "reference": "8.x-1.0-alpha5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/shopify-8.x-1.0-alpha5.zip",
+                "reference": "8.x-1.0-alpha5",
+                "shasum": "1fedb77e0a5db1f730cd499a8359b4b1163c2c19"
+            },
+            "require": {
+                "donutdan4114/shopify": "v2020.01.*",
+                "drupal/core": "^8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha5",
+                    "datestamp": "1588637963",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "John Carbone",
+                    "homepage": "https://www.drupal.org/user/564722"
+                },
+                {
+                    "name": "Matroskeen",
+                    "homepage": "https://www.drupal.org/user/3426249"
+                },
+                {
+                    "name": "bobbygryzynger",
+                    "homepage": "https://www.drupal.org/user/3311649"
+                },
+                {
+                    "name": "donutdan4114",
+                    "homepage": "https://www.drupal.org/user/1724652"
+                },
+                {
+                    "name": "dungahk",
+                    "homepage": "https://www.drupal.org/user/3580914"
+                },
+                {
+                    "name": "k.floyd",
+                    "homepage": "https://www.drupal.org/user/3541504"
+                }
+            ],
+            "description": "Display your Shopify store within your Drupal site.",
+            "homepage": "http://drupal.org/project/shopify",
+            "support": {
+                "source": "https://git.drupalcode.org/project/shopify"
             }
         },
         {
