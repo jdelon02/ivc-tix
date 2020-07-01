@@ -1,0 +1,13 @@
+name: 'Shopify API'
+description: 'Provides a library to easily integrate with the Shopify API.'
+# core: 8.x
+package: Shopify
+# version: VERSION
+type: module
+configure: shopify_api.admin
+
+# Information added by Drupal.org packaging script on 2015-12-06
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'shopify_api'
+datestamp: 1449431949
