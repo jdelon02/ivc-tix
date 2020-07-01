@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Stylesheet for Rules module debugging RTL styles.
+ */
+
+.rules-debug-open-all {
+  float: left;
+}
+
+.rules-debug-log ul {
+  padding-right: 2em;
+}
