@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "81c616ae6757fab205732127744a1216",
+    "content-hash": "7ff70c595c7e71a936b45b0fdebca73a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1218,6 +1218,43 @@
                 "php"
             ],
             "time": "2019-06-08T11:03:04+00:00"
+        },
+        {
+            "name": "donutdan4114/shopify",
+            "version": "v2020.01.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/donutdan4114/shopify.git",
+                "reference": "ca6fe036682c20698873133b388588cd23ece92e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/donutdan4114/shopify/zipball/ca6fe036682c20698873133b388588cd23ece92e",
+                "reference": "ca6fe036682c20698873133b388588cd23ece92e",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0",
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Shopify\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Pepin",
+                    "email": "donutdan4114@gmail.com"
+                }
+            ],
+            "description": "Shopify PHP SDK to interact with the Shopify API.",
+            "time": "2020-03-09T15:51:31+00:00"
         },
         {
             "name": "drupal/address",
@@ -4477,6 +4514,130 @@
             }
         },
         {
+            "name": "drupal/shopify",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/shopify.git",
+                "reference": "5618d55766ab9cc38ac735704c446ae1cf967885"
+            },
+            "require": {
+                "donutdan4114/shopify": "v2020.01.*",
+                "drupal/core": "^8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha5+3-dev",
+                    "datestamp": "1589388271",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "John Carbone",
+                    "homepage": "https://www.drupal.org/user/564722"
+                },
+                {
+                    "name": "Matroskeen",
+                    "homepage": "https://www.drupal.org/user/3426249"
+                },
+                {
+                    "name": "bobbygryzynger",
+                    "homepage": "https://www.drupal.org/user/3311649"
+                },
+                {
+                    "name": "donutdan4114",
+                    "homepage": "https://www.drupal.org/user/1724652"
+                },
+                {
+                    "name": "dungahk",
+                    "homepage": "https://www.drupal.org/user/3580914"
+                },
+                {
+                    "name": "k.floyd",
+                    "homepage": "https://www.drupal.org/user/3541504"
+                }
+            ],
+            "description": "Display your Shopify store within your Drupal site.",
+            "homepage": "http://drupal.org/project/shopify",
+            "support": {
+                "source": "https://git.drupalcode.org/project/shopify"
+            },
+            "time": "2020-05-13T16:43:54+00:00"
+        },
+        {
+            "name": "drupal/shopify_api",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/shopify_api.git",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/shopify_api-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "95baacc72bd9ee3df94e15a0182f1c09f56b814d"
+            },
+            "require": {
+                "donutdan4114/shopify": "dev-master",
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1449431939",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "bobbygryzynger",
+                    "homepage": "https://www.drupal.org/user/3311649"
+                },
+                {
+                    "name": "donutdan4114",
+                    "homepage": "https://www.drupal.org/user/1724652"
+                },
+                {
+                    "name": "dungahk",
+                    "homepage": "https://www.drupal.org/user/3580914"
+                },
+                {
+                    "name": "k.floyd",
+                    "homepage": "https://www.drupal.org/user/3541504"
+                },
+                {
+                    "name": "mstef",
+                    "homepage": "https://www.drupal.org/user/107190"
+                }
+            ],
+            "description": "Simplifies interactions with the Shopify API.",
+            "homepage": "http://drupal.org/project/shopify_api",
+            "support": {
+                "source": "https://git.drupalcode.org/project/shopify_api"
+            }
+        },
+        {
             "name": "drupal/simple_block",
             "version": "1.0.0-beta1",
             "source": {
@@ -5050,6 +5211,55 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/twig_vardumper",
                 "issues": "https://www.drupal.org/project/issues/twig_vardumper"
+            }
+        },
+        {
+            "name": "drupal/typed_data",
+            "version": "1.0.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/typed_data.git",
+                "reference": "8.x-1.0-alpha5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/typed_data-8.x-1.0-alpha5.zip",
+                "reference": "8.x-1.0-alpha5",
+                "shasum": "44cfaf8f6d6bc0b876e88a8b9d473799818d395f"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha5",
+                    "datestamp": "1591397037",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TR",
+                    "homepage": "https://www.drupal.org/user/202830"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                }
+            ],
+            "description": "Extends the core Typed Data API with new APIs and features.",
+            "homepage": "https://www.drupal.org/project/typed_data",
+            "support": {
+                "source": "https://git.drupalcode.org/project/typed_data",
+                "issues": "https://www.drupal.org/project/issues/typed_data"
             }
         },
         {
@@ -11272,7 +11482,14 @@
             "time": "2020-06-07T12:11:38+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "dev-master",
+            "alias_normalized": "9999999-dev",
+            "version": "2020.01.1.0",
+            "package": "donutdan4114/shopify"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/custom_formatters": 15,
@@ -11283,8 +11500,11 @@
         "drupal/inline_entity_form": 5,
         "drupal/libraries": 15,
         "drupal/media_entity_browser": 10,
+        "drupal/shopify": 20,
+        "drupal/shopify_api": 15,
         "drupal/simple_block": 10,
-        "drupal/tvi": 10
+        "drupal/tvi": 10,
+        "drupal/typed_data": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
