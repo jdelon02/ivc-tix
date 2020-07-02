@@ -22,3 +22,17 @@ function ivc_tickets_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+/**
+ * Implements hook_theme().
+ */
+function ivc_tickets_theme() {
+  return [
+    'ticket_scanner_block' => [
+      'variables' => [
+        'content' => NULL
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}

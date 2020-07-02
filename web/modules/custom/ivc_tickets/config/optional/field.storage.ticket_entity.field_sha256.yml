@@ -1,0 +1,20 @@
+uuid: 6173cc06-2dfd-4a40-a1b9-4dc38961829e
+langcode: en
+status: true
+dependencies:
+  module:
+    - ivc_tickets
+id: ticket_entity.field_sha256
+field_name: field_sha256
+entity_type: ticket_entity
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
+
