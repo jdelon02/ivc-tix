@@ -1,0 +1,21 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'ticket-scanner',
+] %}
+<div{{ attributes.addClass(classes) }}>
+    <div id="qrcode_status"></div>
+    <div class="instructions">
+        <p>Click below to take a picture of the QR code.</p>
+        <input type="file" id="qr-input-file" accept="image/*" capture>    
+    </div>
+    <div id="qrcode_scanner"></div>
+</div>

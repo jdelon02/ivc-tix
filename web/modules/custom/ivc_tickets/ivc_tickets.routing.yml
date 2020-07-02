@@ -1,0 +1,44 @@
+ivc_tickets.ticket_qr_code_controller_ticket_qr_code:
+  path: '/ticket/api/ticketing/{hash}'
+  defaults:
+    _controller: '\Drupal\ivc_tickets\Controller\TicketQrCodeController::ticket_qr_code'
+    _title: 'Ticket QR Code'
+  requirements:
+    _access: 'TRUE'
+  options:
+    parameters:
+      hash:
+        type: String
+ivc_tickets.ticket_scan_controller_ticket_scan:
+  path: '/ticket/scan/{hash}'
+  defaults:
+    _controller: '\Drupal\ivc_tickets\Controller\TicketScanController::ticket_scan'
+    _title: 'Ticket Scan'
+  requirements:
+    _permission: 'access ticket redemption'
+  options:
+    parameters:
+      hash:
+        type: String
+ivc_tickets.ticket_scan_controller_invalid_ticket:
+  path: '/ticket/invalid-ticket/{hash}'
+  defaults:
+    _controller: '\Drupal\ivc_tickets\Controller\TicketScanController::invalid_ticket'
+    _title: 'Invalid Ticket'
+  requirements:
+    _permission: 'access ticket redemption'
+  options:
+    parameters:
+      hash:
+        type: String
+ivc_tickets.ticket_scan_controller_scanner:
+  path: '/ticket/scan'
+  defaults:
+    _controller: '\Drupal\ivc_tickets\Controller\TicketScanController::scanner'
+    _title: 'Scan Ticket'
+  requirements:
+    _permission: 'access ticket redemption'
+  options:
+    parameters:
+      hash:
+        type: String                        
