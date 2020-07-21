@@ -1,0 +1,6 @@
+ticket-scanner:
+  js:
+    js/ticket-scanner.js: {}
+    js/html5-qrcode/html5-qrcode.min.js: { minified: true }
+  dependencies:
+    - core/jquery
