@@ -38,3 +38,6 @@ view published customer entities:
 view unpublished customer entities:
   title: 'View unpublished Customer entities'
 
+access ticket redemption:
+  title: 'Ticket Redemption Permission'
+  description: 'Allow access to redemption features.'
