@@ -1,0 +1,12 @@
+uuid: 28c5c3e5-892e-45d5-9f4e-b015485457ab
+langcode: en
+status: true
+dependencies: {  }
+id: venue
+label: Venue
+weight: 3
+is_admin: null
+permissions:
+  - 'access ticket redemption'
+  - 'view published customer entities'
+  - 'view published ticket entities'

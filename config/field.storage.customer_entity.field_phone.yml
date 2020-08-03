@@ -1,0 +1,21 @@
+uuid: f0b3cd53-9ee8-4744-a836-cedee6da80d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - ivc_tickets
+    - telephone
+_core:
+  default_config_hash: 4zJ5E9W0GexR5dh4GdGrFjOb6Bsm_rza-FUh8TgLFQQ
+id: customer_entity.field_phone
+field_name: field_phone
+entity_type: customer_entity
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

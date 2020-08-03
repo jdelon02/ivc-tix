@@ -1,0 +1,26 @@
+uuid: c86fc378-99a3-4ede-9b5c-9ab698db8079
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.ticket_entity.field_amount_paid
+  module:
+    - ivc_tickets
+_core:
+  default_config_hash: IE6ysoi_3VWJZpuS4X6Wk74OZHHHnmlhAGHLe7gzsTg
+id: ticket_entity.ticket_entity.field_amount_paid
+field_name: field_amount_paid
+entity_type: ticket_entity
+bundle: ticket_entity
+label: 'Amount Paid'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

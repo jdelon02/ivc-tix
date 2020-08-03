@@ -1,0 +1,20 @@
+uuid: df0dbbaa-72f9-495d-a52e-8213c6e3475d
+langcode: en
+status: true
+dependencies:
+  module:
+    - ivc_tickets
+_core:
+  default_config_hash: zmIpP0lRmHY__IFUBjWXQuWAKLGA7gQIQnD5vioJGT0
+id: ticket_entity.field_amount_paid
+field_name: field_amount_paid
+entity_type: ticket_entity
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

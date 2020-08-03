@@ -1,0 +1,25 @@
+uuid: f8686e8f-76ab-4708-9b0e-198dab5cf2c0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:823422ed-c48b-4295-a443-94694cc32650'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: logo
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:823422ed-c48b-4295-a443-94694cc32650'
+settings:
+  id: 'block_content:823422ed-c48b-4295-a443-94694cc32650'
+  label: Logo
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

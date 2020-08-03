@@ -1,0 +1,28 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'ticket-scanner',
+] %}
+<div id="ticket-scanner" {{ attributes.addClass(classes) }}>
+    <div class="instructions">
+        <div class="form-group">
+            <div class="camera-select-wrapper" style="display: none">
+                <label for="camera-select">Select a camera</label>
+                <select id="camera-select">
+                </select>
+                <button id="btn-set-camera" type="button">Start Scanning</button>
+            </div>
+        </div>
+    </div>
+    <div id="qrcode_status"></div>
+    <div id="qrcode_scanner" style="width: 100%;">
+    </div>
+</div>

@@ -17,13 +17,24 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 include __DIR__ . "/settings.pantheon.php";
 
 /**
- * Skipping permissions hardening will make scaffolding
- * work better, but will also raise a warning when you
- * install Drupal.
- *
- * https://www.drupal.org/project/drupal/issues/3091285
+ * Place the config directory outside of the Drupal root.
  */
-// $settings['skip_permissions_hardening'] = TRUE;
+/**
+ * Drupal 8.8 workaround
+ */
+$settings['config_sync_directory'] = dirname(DRUPAL_ROOT) . '/config';
+
+
+$conf['https'] = TRUE;
+
+/**
+ * If there is an environment settings file, then include it
+ */
+$envirosettings = __DIR__ . "/enviros/settings." . $_ENV['PANTHEON_ENVIRONMENT'] . ".php";
+if (file_exists($envirosettings)) {
+  include $envirosettings;
+}
+
 
 /**
  * If there is a local settings file, then include it
@@ -32,3 +43,9 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
+
+/**
+ * Always install the 'standard' profile to stop the installer from
+ * modifying settings.php.
+ */
+$settings['install_profile'] = 'standard';

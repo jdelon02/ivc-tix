@@ -1,0 +1,20 @@
+uuid: 66647c23-4678-461a-9e17-b4199eec7599
+langcode: en
+status: true
+dependencies:
+  module:
+    - ivc_tickets
+_core:
+  default_config_hash: 4Fz7Bxkf5bkgv2KU1ZXBzjAjin7A_RPWjCU9r42RqUo
+id: customer_entity.field_email
+field_name: field_email
+entity_type: customer_entity
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

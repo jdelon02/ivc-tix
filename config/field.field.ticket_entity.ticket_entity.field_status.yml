@@ -1,0 +1,21 @@
+uuid: a737f999-b3c7-47d4-8205-270728481e27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.ticket_entity.field_status
+  module:
+    - ivc_tickets
+    - options
+id: ticket_entity.ticket_entity.field_status
+field_name: field_status
+entity_type: ticket_entity
+bundle: ticket_entity
+label: 'Shopify Status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

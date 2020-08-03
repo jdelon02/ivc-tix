@@ -1,0 +1,20 @@
+uuid: 103a705b-6f31-4d4c-b14b-cef98d2b6b63
+langcode: en
+status: true
+dependencies:
+  module:
+    - ivc_tickets
+id: ticket_entity.field_ticket_number
+field_name: field_ticket_number
+entity_type: ticket_entity
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

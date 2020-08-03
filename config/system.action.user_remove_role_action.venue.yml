@@ -1,0 +1,14 @@
+uuid: 251023e8-7799-4f1d-9321-0cc6e5a306f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.venue
+  module:
+    - user
+id: user_remove_role_action.venue
+label: 'Remove the Venue role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: venue

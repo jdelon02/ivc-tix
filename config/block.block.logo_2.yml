@@ -1,0 +1,25 @@
+uuid: 2da79f60-03a7-42d5-b918-18dbdf54df44
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:823422ed-c48b-4295-a443-94694cc32650'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: logo_2
+theme: bootstrap
+region: navigation
+weight: 0
+provider: null
+plugin: 'block_content:823422ed-c48b-4295-a443-94694cc32650'
+settings:
+  id: 'block_content:823422ed-c48b-4295-a443-94694cc32650'
+  label: Logo
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

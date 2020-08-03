@@ -1,0 +1,22 @@
+uuid: b4e370a5-c4b1-443c-9e1b-eed8d2fa2933
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_venue
+  module:
+    - user
+id: user.user.field_venue
+field_name: field_venue
+entity_type: user
+bundle: user
+label: Venue
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:shopify_product'
+  handler_settings: {  }
+field_type: entity_reference

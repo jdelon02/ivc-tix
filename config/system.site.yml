@@ -3,9 +3,9 @@ name: ivc-tix
 mail: jdelong@backofficethinking.com
 slogan: ''
 page:
-  403: ''
+  403: /user/login
   404: ''
-  front: /node
+  front: /ticket/scan
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

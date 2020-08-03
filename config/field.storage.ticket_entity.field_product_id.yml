@@ -1,0 +1,21 @@
+uuid: ad68022c-3888-4a92-842b-06c34056e2b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - ivc_tickets
+id: ticket_entity.field_product_id
+field_name: field_product_id
+entity_type: ticket_entity
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

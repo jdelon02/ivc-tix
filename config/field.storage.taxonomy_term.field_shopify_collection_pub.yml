@@ -1,0 +1,22 @@
+uuid: 6ff2b392-0640-4be2-9380-dc72838948f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: oeZwkYkv0D2MbH1QBNSOrCU6vStQ2FBdruC90xHCyrU
+id: taxonomy_term.field_shopify_collection_pub
+field_name: field_shopify_collection_pub
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

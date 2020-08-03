@@ -1,0 +1,19 @@
+uuid: b86fe38d-c114-4dee-8a28-0872f4c4fe05
+langcode: en
+status: true
+dependencies:
+  module:
+    - ivc_tickets
+id: ticket_entity.field_redeemed
+field_name: field_redeemed
+entity_type: ticket_entity
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
+

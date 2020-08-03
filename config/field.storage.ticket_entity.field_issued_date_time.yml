@@ -1,0 +1,22 @@
+uuid: 7e9e3b52-bfda-46a5-a0bf-3a772db16929
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - ivc_tickets
+_core:
+  default_config_hash: VC3rbhmgdvchY734V8mM93O1sGwRQ1gfiFIGERVC3VA
+id: ticket_entity.field_issued_date_time
+field_name: field_issued_date_time
+entity_type: ticket_entity
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

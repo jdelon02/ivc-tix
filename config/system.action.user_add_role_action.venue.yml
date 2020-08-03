@@ -1,0 +1,14 @@
+uuid: bf008734-a9e6-4cff-85a3-d9a8aa2925fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.venue
+  module:
+    - user
+id: user_add_role_action.venue
+label: 'Add the Venue role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: venue

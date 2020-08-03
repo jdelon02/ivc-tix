@@ -1,0 +1,5 @@
+services:
+  ivc_tickets.shopify.webhook_subscriber.decorator:
+    class: Drupal\ivc_tickets\Event\EventSubscriber\IvcShopifyWebhookSubscriber
+    decorates: shopify.webhook_subscriber
+    decoration_priority: 5
