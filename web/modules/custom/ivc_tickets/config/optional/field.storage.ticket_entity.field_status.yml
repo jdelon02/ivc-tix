@@ -1,0 +1,37 @@
+uuid: ff76df8e-f0f8-405b-826d-9afc642db1bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - ivc_tickets
+    - options
+id: ticket_entity.field_status
+field_name: field_status
+entity_type: ticket_entity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: issued
+      label: issued
+    -
+      value: cancelled
+      label: cancelled
+    -
+      value: refunded
+      label: refunded
+    -
+      value: deleted
+      label: deleted
+    -
+      value: redeemed
+      label: redeemed
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
+
