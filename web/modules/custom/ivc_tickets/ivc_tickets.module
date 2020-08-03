@@ -22,3 +22,36 @@ function ivc_tickets_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+/**
+ * Implements hook_theme().
+ */
+function ivc_tickets_theme() {
+  return [
+    'ticket_scanner_block' => [
+      'variables' => [
+        'content' => NULL
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function ivc_tickets_user_login(\Drupal\user\UserInterface $account) {
+  // Ignore password reset.
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if ($route_name !== 'user.reset.login') {
+    // Do not interfere if a destination was already set.
+    $current_request = \Drupal::service('request_stack')->getCurrentRequest();
+    if (!$current_request->query->get('destination')) {
+      // Default login destination to the dashboard.
+      $current_request->query->set(
+        'destination',
+        \Drupal\Core\Url::fromRoute('ivc_tickets.ticket_scan_controller_scanner')->toString()
+      );
+    }
+  }
+}
