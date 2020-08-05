@@ -2063,6 +2063,9 @@
             },
             "type": "drupal-profile",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
                     "version": "8.x-1.8",
                     "datestamp": "1524572284",
@@ -2984,7 +2987,7 @@
             "extra": {
                 "drupal": {
                     "version": "4.0.0",
-                    "datestamp": "1592918748",
+                    "datestamp": "1592918495",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4481,10 +4484,6 @@
                     "homepage": "https://www.drupal.org/user/1485048"
                 },
                 {
-                    "name": "acbramley",
-                    "homepage": "https://www.drupal.org/user/1036766"
-                },
-                {
                     "name": "benjy",
                     "homepage": "https://www.drupal.org/user/1852732"
                 },
@@ -5525,16 +5524,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "8.3.6",
+            "version": "8.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "85a2d46c7398d00936ecd78c65d3103f7ed51686"
+                "reference": "bc2807bd1e16d4eee56f54bbf9c8b64246e8601a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/85a2d46c7398d00936ecd78c65d3103f7ed51686",
-                "reference": "85a2d46c7398d00936ecd78c65d3103f7ed51686",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/bc2807bd1e16d4eee56f54bbf9c8b64246e8601a",
+                "reference": "bc2807bd1e16d4eee56f54bbf9c8b64246e8601a",
                 "shasum": ""
             },
             "require": {
@@ -5641,7 +5640,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-08-02T02:40:19+00:00"
+            "time": "2020-08-04T02:37:59+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -8645,7 +8644,7 @@
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
@@ -8799,7 +8798,7 @@
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
@@ -9165,7 +9164,7 @@
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
